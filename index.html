@@ -121,6 +121,13 @@
       line-height: 1.35;
       white-space: nowrap;
     }
+    /* Usuń obwódkę focus po kliknięciu na województwo (Leaflet/SVG) */
+.leaflet-container path:focus,
+.leaflet-container svg:focus,
+.leaflet-container .leaflet-interactive:focus {
+  outline: none !important;
+}
+
   </style>
 </head>
 
@@ -258,6 +265,7 @@
   </script>
 </body>
 </html>
+
 
 
 
